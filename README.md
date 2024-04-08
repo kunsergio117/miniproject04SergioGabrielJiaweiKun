@@ -1,5 +1,5 @@
-# miniproject3SergioGabrielJiaweiKun
-Prototype program using DJango
+# miniproject4SergioGabrielJiaweiKun
+Prototype Polling application using DJango
 
 ### INF601 - Advanced Programming in Python
 ### Sergio Gabriel Jiawei Kun
@@ -21,22 +21,14 @@ pip install -r requirements.txt
 
 ### Installing
 * Python 3.11
-* the following installs the application onto your virtual environment
-```python
-pip install -e .
-```
 
 ### Executing program
-* The first line is to initialise the sql database, and the 2nd 
-asks flask to run the program for dev purposes.
-* Remember that the first line needs to be re-run every time that changes are made to the schema.sql file.
-
-```python
-flask --app flaskr init-db 
-flask --app flaskr run
+Run the following in the bash terminal
 ```
-once running, you should be able to see the web application run in:
-http://127.0.0.1:5000
+python manage.py runserver
+```
+Once running, you should be able to see the web application run in:
+http://127.0.0.1:8000/
 * If there is an error, please refer to the above required packages in order for the program to run smoothly.
 
 ## Help
@@ -54,6 +46,4 @@ Contributors names and contact info
 ## License
 * No licencing
 ## Acknowledgments
-* [Matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
-* [Plotly](https://plotly.com/python/)
-* [Flask](https://flask.palletsprojects.com/en/3.0.x/)
+* [DJango app tutorial](https://docs.djangoproject.com/en/4.2/intro/tutorial08/)
