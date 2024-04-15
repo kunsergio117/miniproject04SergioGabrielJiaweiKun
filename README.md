@@ -25,7 +25,11 @@ pip install -r requirements.txt
 ### Executing program
 Run the following in the bash terminal
 ```
-python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser (this will create the administrator login for your /admin side of your project)
+
+python manage.py runserver (This brings your web application up)
 ```
 Once running, you should be able to see the web application run in:
 http://127.0.0.1:8000/
